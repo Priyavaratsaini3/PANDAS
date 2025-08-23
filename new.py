@@ -9,3 +9,4 @@ list = [12,3,4,4,5,6]
 new = pd.DataFrame(list)
 print(new.head(5))
 
+print(new.shape)
