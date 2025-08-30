@@ -5,8 +5,17 @@ import pandas as pd
 # # print(df1)
 # df2 = pd.read_json("titanic.json", lines=True)
 # print(df2)
-list = [12,3,4,4,5,6]
-new = pd.DataFrame(list)
-print(new.head(5))
+# list = [12,3,4,4,5,6]
+# new = pd.DataFrame(list)
+# print(new.head(5))
 
-print(new.shape)
+# print(new.shape)
+
+data = {
+    "rollno": [101, 102, 103],
+    "name": ["Priya", "Aman", "Ravi"],
+    "contact": ["9999999999", "8888888888", "7777777777"]
+}
+
+df = data[data["rollno"] == 101][["name", "age"]]
+print(df)
