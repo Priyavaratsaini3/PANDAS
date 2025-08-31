@@ -14,8 +14,14 @@ import pandas as pd
 data = {
     "rollno": [101, 102, 103],
     "name": ["Priya", "Aman", "Ravi"],
-    "contact": ["9999999999", "8888888888", "7777777777"]
+    "contact": ["99", "88", "77"]
 }
 
-df = data[data["rollno"] == 101][["name", "age"]]
-print(df)
+# df = data[data["rollno"] == 101][["name", "age"]]
+# print(df)
+
+new = pd.DataFrame(data)
+
+new['salary'] = new['contact'].astype(int) * 2
+
+print(new)
