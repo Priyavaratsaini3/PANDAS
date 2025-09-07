@@ -25,3 +25,6 @@ new = pd.DataFrame(data)
 new['salary'] = new['contact'].astype(int) * 2
 
 print(new)
+
+new["contact"] = new["contact"].astype(int)
+print(new.info())
